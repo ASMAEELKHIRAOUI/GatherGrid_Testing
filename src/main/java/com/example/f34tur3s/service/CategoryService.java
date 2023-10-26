@@ -15,6 +15,10 @@ public class CategoryService {
         categoryRepository = new CategoryRepository();
     }
 
+    public CategoryService(CategoryRepository categoryRepository) {
+        this.categoryRepository = categoryRepository;
+    }
+
     public List<Category> getAllCategories() {
         return categoryRepository.getAllCategories();
     }

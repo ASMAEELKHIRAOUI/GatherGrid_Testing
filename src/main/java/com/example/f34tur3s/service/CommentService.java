@@ -12,6 +12,10 @@ public class CommentService {
         commentRepository = new CommentRepository();
     }
 
+    public CommentService(CommentRepository commentRepository) {
+        this.commentRepository = commentRepository;
+    }
+
     public List<Comment> getAllComments() {
         return commentRepository.getAllComments();
     }

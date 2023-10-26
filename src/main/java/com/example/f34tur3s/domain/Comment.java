@@ -12,6 +12,7 @@ public class Comment {
 
     private String text;
     private Integer review;
+    private Event event;
     @ManyToOne
     private User user;
 
@@ -22,6 +23,14 @@ public class Comment {
         this.text = text;
         this.review = review;
         this.user = user;
+    }
+
+    public Event getEvent() {
+        return event;
+    }
+
+    public void setEvent(Event event) {
+        this.event = event;
     }
 
     public Long getId() {

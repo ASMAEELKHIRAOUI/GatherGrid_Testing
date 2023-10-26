@@ -16,7 +16,7 @@ class CategoryServiceTest {
     @BeforeEach
     void setUp() {
         categoryRepository = mock(CategoryRepository.class);
-        categoryService = new CategoryService();
+        categoryService = new CategoryService(categoryRepository);
     }
     @Test
     void saveCategory() {

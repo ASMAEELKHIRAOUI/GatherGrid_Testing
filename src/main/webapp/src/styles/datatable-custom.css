@@ -1,0 +1,23 @@
+/* datatable */
+/* if change id table change all #example */
+#example_wrapper .grid{
+    display: block;
+}
+#example_filter{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 12px;
+}
+#example_filter label{
+    color: #fff;
+}
+#example_length,#example_length label{
+    color: #fff;
+    margin-top: 12px;
+}
+table tbody tr .dataTables_empty {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+}
